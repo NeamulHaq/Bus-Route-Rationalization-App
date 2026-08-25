@@ -1,0 +1,73 @@
+HOW TO RUN APP
+================================================================
+
+Open Command Prompt and run the following steps in order.
+
+
+STEP 1 — Go to the project folder
+----------------------------------------------------------------
+cd /d "COPY FOLDER LINK\my_streamlit_brr_app"
+
+
+STEP 2 — Create the virtual environment
+----------------------------------------------------------------
+python -m venv .venv
+
+
+STEP 3 — Activate the virtual environment
+----------------------------------------------------------------
+.venv\Scripts\activate
+
+
+STEP 4 — Confirm the environment is active
+----------------------------------------------------------------
+where python
+
+You should see:
+FOLDER LINK\my_streamlit_brr_app\.venv\Scripts\python.exe
+
+Then check the Python version:
+python --version
+
+You should see:
+Python 3.13.14
+
+
+STEP 5 — Install the required packages
+----------------------------------------------------------------
+(Make sure requirements.txt is inside this project folder)
+
+python -m pip install -r requirements.txt
+
+
+STEP 6 — Run the Streamlit app
+----------------------------------------------------------------
+streamlit run app.py
+
+You should then see:
+Local URL:   http://localhost:8501
+Network URL: http://192.168.0.100:8501
+
+Open the Local URL in your browser to use the app.
+
+================================================================
+NOTE: Every time you come back to work on this project in a new
+Command Prompt window, you only need to repeat Steps 1, 3, and 6
+(you don't need to recreate the environment or reinstall packages
+again unless requirements.txt changes).
+You do not need to recreate the virtual environment or reinstall the packages each time.
+
+So, You only need:
+
+cd /d "COPY FOLDER LINK\my_streamlit_brr_app"
+
+.venv\Scripts\activate
+
+streamlit run app.py
+
+That's it. Enjoy!!!
+
+Credits: A.T. M Neamul, 
+         GIS Expert and Data Analyst, 
+         Email: sujon.kuet@gmail.com
+================================================================
