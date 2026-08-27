@@ -117,6 +117,7 @@ with st.sidebar:
     )
     st.caption(f"Analysis CRS: {core.ANALYSIS_CRS}")
     st.markdown("---")
+    st.caption("Data Source: BRR Project-2026, Dhaka Transport Coordination Authority")   
     st.caption("Author: A. T. M Neamul, GIS Expert and Data Analyst")
     st.caption("Email: sujon.kuet@gmail.com")
 
