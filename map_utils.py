@@ -164,7 +164,8 @@ def build_input_map(
 
     center = routes_web.geometry.unary_union.centroid
 
-    m = folium.Map(location=[center.y, center.x], zoom_start=11, tiles=None) folium.TileLayer("OpenStreetMap", opacity=0.4, name="OpenStreetMap").add_to(m)
+    m = folium.Map(location=[center.y, center.x], zoom_start=11, tiles=None)
+    folium.TileLayer("OpenStreetMap", opacity=0.4, name="OpenStreetMap").add_to(m)
 
     folium.GeoJson(
         routes_web.to_json(),
